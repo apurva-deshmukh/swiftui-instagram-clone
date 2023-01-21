@@ -12,7 +12,7 @@ struct FeedCell: View {
         VStack(alignment: .leading) {
             // profile indo
             HStack {
-                Image(systemName: "house")
+                Image("post2")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 36, height: 36)
@@ -25,10 +25,10 @@ struct FeedCell: View {
             
             // post image
             
-            Image(systemName: "house")
+            Image("post1")
                 .resizable()
                 .scaledToFill()
-                .frame(maxHeight: 330)
+                .frame(maxHeight: 440)
                 .clipped()
             
             // action buttons
