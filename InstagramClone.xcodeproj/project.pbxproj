@@ -28,6 +28,11 @@
 		EE53C32928FF628E005ACEF3 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE53C32828FF628E005ACEF3 /* NotificationsView.swift */; };
 		EE53C32B28FF62BF005ACEF3 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE53C32A28FF62BF005ACEF3 /* ProfileView.swift */; };
 		EE53C32D28FF62E2005ACEF3 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE53C32C28FF62E2005ACEF3 /* UploadPostView.swift */; };
+		EEDCA30C2985A07E00043FF1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA30B2985A07E00043FF1 /* LoginView.swift */; };
+		EEDCA30E2985A08B00043FF1 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA30D2985A08B00043FF1 /* RegistrationView.swift */; };
+		EEDCA3102985A0A000043FF1 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA30F2985A0A000043FF1 /* ResetPasswordView.swift */; };
+		EEDCA3122985A29500043FF1 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3112985A29500043FF1 /* CustomTextField.swift */; };
+		EEDCA3142985A29F00043FF1 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3132985A29F00043FF1 /* CustomSecureField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +59,11 @@
 		EE53C32828FF628E005ACEF3 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		EE53C32A28FF62BF005ACEF3 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		EE53C32C28FF62E2005ACEF3 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		EEDCA30B2985A07E00043FF1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EEDCA30D2985A08B00043FF1 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		EEDCA30F2985A0A000043FF1 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
+		EEDCA3112985A29500043FF1 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = InstagramClone/View/Authentication/CustomTextField.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA3132985A29F00043FF1 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomSecureField.swift; path = InstagramClone/View/Authentication/CustomSecureField.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +163,8 @@
 			children = (
 				EE004DFD297C50DB002A43F3 /* Extensions.swift */,
 				EE004E07297E10A6002A43F3 /* ImagePicker.swift */,
+				EEDCA3112985A29500043FF1 /* CustomTextField.swift */,
+				EEDCA3132985A29F00043FF1 /* CustomSecureField.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -222,6 +234,9 @@
 		EE53C31C28FF5EE2005ACEF3 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				EEDCA30B2985A07E00043FF1 /* LoginView.swift */,
+				EEDCA30D2985A08B00043FF1 /* RegistrationView.swift */,
+				EEDCA30F2985A0A000043FF1 /* ResetPasswordView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -337,9 +352,12 @@
 				EE53C32728FF6284005ACEF3 /* SearchView.swift in Sources */,
 				EE53C32528FF625E005ACEF3 /* FeedView.swift in Sources */,
 				EE004DF8297C495E002A43F3 /* PostGridView.swift in Sources */,
+				EEDCA30E2985A08B00043FF1 /* RegistrationView.swift in Sources */,
+				EEDCA3122985A29500043FF1 /* CustomTextField.swift in Sources */,
 				EE53C30028FF5D77005ACEF3 /* InstagramCloneApp.swift in Sources */,
 				EE53C31528FF5E8F005ACEF3 /* ContentView.swift in Sources */,
 				EE53C32328FF622C005ACEF3 /* MainTabView.swift in Sources */,
+				EEDCA3102985A0A000043FF1 /* ResetPasswordView.swift in Sources */,
 				EE53C32D28FF62E2005ACEF3 /* UploadPostView.swift in Sources */,
 				EE004E08297E10A6002A43F3 /* ImagePicker.swift in Sources */,
 				EE004E02297E0603002A43F3 /* ProfileHeaderView.swift in Sources */,
@@ -347,11 +365,13 @@
 				EE004E04297E0A15002A43F3 /* UserStatView.swift in Sources */,
 				EE004DFA297C4C1E002A43F3 /* UserCell.swift in Sources */,
 				EE004DF6297C4781002A43F3 /* SearchBar.swift in Sources */,
+				EEDCA3142985A29F00043FF1 /* CustomSecureField.swift in Sources */,
 				EE53C32928FF628E005ACEF3 /* NotificationsView.swift in Sources */,
 				EE1FC956297ADF3A001C8C5F /* FeedCell.swift in Sources */,
 				EE004E06297E0B35002A43F3 /* ProfileActionButtonView.swift in Sources */,
 				EE004DFC297C4C2B002A43F3 /* UserListView.swift in Sources */,
 				EE004E00297E03AC002A43F3 /* NotificationCell.swift in Sources */,
+				EEDCA30C2985A07E00043FF1 /* LoginView.swift in Sources */,
 				EE004DFE297C50DC002A43F3 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,7 +497,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InstagramClone/Preview Content\"";
-				DEVELOPMENT_TEAM = LZL7B5X533;
+				DEVELOPMENT_TEAM = 28TYCU28PG;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -515,7 +535,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"InstagramClone/Preview Content\"";
-				DEVELOPMENT_TEAM = LZL7B5X533;
+				DEVELOPMENT_TEAM = 28TYCU28PG;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
