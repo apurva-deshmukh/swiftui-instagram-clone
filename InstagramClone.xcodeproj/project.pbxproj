@@ -54,6 +54,10 @@
 		EEDCA3472986C0B900043FF1 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3462986C0B900043FF1 /* FeedViewModel.swift */; };
 		EEDCA3492986C59900043FF1 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3482986C59900043FF1 /* PostGridViewModel.swift */; };
 		EEDCA34B2986CA4100043FF1 /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA34A2986CA4100043FF1 /* FeedCellViewModel.swift */; };
+		EEDCA34D2986D3D100043FF1 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA34C2986D3D100043FF1 /* Comment.swift */; };
+		EEDCA34F2986D3E000043FF1 /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA34E2986D3E000043FF1 /* CommentsView.swift */; };
+		EEDCA3512986D3EB00043FF1 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3502986D3EB00043FF1 /* CommentCell.swift */; };
+		EEDCA3532986D3FD00043FF1 /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3522986D3FD00043FF1 /* CommentsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +103,10 @@
 		EEDCA3462986C0B900043FF1 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedViewModel.swift; path = InstagramClone/View/Authentication/FeedViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA3482986C59900043FF1 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostGridViewModel.swift; path = InstagramClone/View/Authentication/PostGridViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA34A2986CA4100043FF1 /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedCellViewModel.swift; path = InstagramClone/View/Authentication/FeedCellViewModel.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA34C2986D3D100043FF1 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = InstagramClone/View/Authentication/Comment.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA34E2986D3E000043FF1 /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommentsView.swift; path = InstagramClone/View/Authentication/CommentsView.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA3502986D3EB00043FF1 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommentCell.swift; path = InstagramClone/View/Authentication/CommentCell.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA3522986D3FD00043FF1 /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommentsViewModel.swift; path = InstagramClone/View/Authentication/CommentsViewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +173,7 @@
 			children = (
 				EEDCA32B2986143D00043FF1 /* User.swift */,
 				EEDCA3442986BFD200043FF1 /* Post.swift */,
+				EEDCA34C2986D3D100043FF1 /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -195,6 +204,7 @@
 				EEDCA33A2986188F00043FF1 /* SearchViewModel.swift */,
 				EEDCA3402986377700043FF1 /* UploadPostViewModel.swift */,
 				EEDCA3482986C59900043FF1 /* PostGridViewModel.swift */,
+				EEDCA3522986D3FD00043FF1 /* CommentsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -261,6 +271,8 @@
 		EE53C31928FF5ECD005ACEF3 /* Comments */ = {
 			isa = PBXGroup;
 			children = (
+				EEDCA34E2986D3E000043FF1 /* CommentsView.swift */,
+				EEDCA3502986D3EB00043FF1 /* CommentCell.swift */,
 			);
 			path = Comments;
 			sourceTree = "<group>";
@@ -424,6 +436,7 @@
 				EE53C32528FF625E005ACEF3 /* FeedView.swift in Sources */,
 				EE004DF8297C495E002A43F3 /* PostGridView.swift in Sources */,
 				EEDCA30E2985A08B00043FF1 /* RegistrationView.swift in Sources */,
+				EEDCA3532986D3FD00043FF1 /* CommentsViewModel.swift in Sources */,
 				EEDCA3122985A29500043FF1 /* CustomTextField.swift in Sources */,
 				EEDCA3282985FFFE00043FF1 /* ImageUploader.swift in Sources */,
 				EE53C30028FF5D77005ACEF3 /* InstagramCloneApp.swift in Sources */,
@@ -434,6 +447,7 @@
 				EE53C32D28FF62E2005ACEF3 /* UploadPostView.swift in Sources */,
 				EEDCA3412986377700043FF1 /* UploadPostViewModel.swift in Sources */,
 				EE004E08297E10A6002A43F3 /* ImagePicker.swift in Sources */,
+				EEDCA3512986D3EB00043FF1 /* CommentCell.swift in Sources */,
 				EEDCA34329863E4C00043FF1 /* TextArea.swift in Sources */,
 				EEDCA3262985B40200043FF1 /* AuthenticationViewModel.swift in Sources */,
 				EEDCA33F29862AAB00043FF1 /* UserService.swift in Sources */,
@@ -442,6 +456,7 @@
 				EE004E04297E0A15002A43F3 /* UserStatView.swift in Sources */,
 				EE004DFA297C4C1E002A43F3 /* UserCell.swift in Sources */,
 				EE004DF6297C4781002A43F3 /* SearchBar.swift in Sources */,
+				EEDCA34F2986D3E000043FF1 /* CommentsView.swift in Sources */,
 				EEDCA34B2986CA4100043FF1 /* FeedCellViewModel.swift in Sources */,
 				EEDCA3452986BFD200043FF1 /* Post.swift in Sources */,
 				EEDCA33B2986188F00043FF1 /* SearchViewModel.swift in Sources */,
@@ -454,6 +469,7 @@
 				EE004DFC297C4C2B002A43F3 /* UserListView.swift in Sources */,
 				EE004E00297E03AC002A43F3 /* NotificationCell.swift in Sources */,
 				EEDCA30C2985A07E00043FF1 /* LoginView.swift in Sources */,
+				EEDCA34D2986D3D100043FF1 /* Comment.swift in Sources */,
 				EE004DFE297C50DC002A43F3 /* Extensions.swift in Sources */,
 				EEDCA32A2986124E00043FF1 /* Constants.swift in Sources */,
 			);
