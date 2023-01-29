@@ -8,7 +8,7 @@
 import Foundation
 import FirebaseFirestoreSwift
 
-struct User: Decodable {
+struct User: Identifiable, Decodable {
     let email: String
     let username: String
     let fullname: String
