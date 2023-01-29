@@ -19,6 +19,14 @@ class FeedCellViewModel: ObservableObject {
         return "\(post.likes) like\(post.likes != 1 ? "s" : "")"
     }
     
+    var timestampString: String {
+        let formatter = DateComponentsFormatter()
+        formatter.allowedUnits = [.second, .minute, .hour, .day, .weekOfMonth]
+        formatter.maximumUnitCount = 1
+        formatter.unitsStyle = .abbreviated
+        return formatter.string(from: post.timestamp.dateValue(), to: Date()) ?? ""
+    }
+    
     func like() {
         guard let currentUserId = AuthenticationViewModel.shared.userSession?.uid else { return }
         guard let postId = post.id else { return }
