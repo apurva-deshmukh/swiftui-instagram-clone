@@ -12,6 +12,7 @@ import FirebaseFirestore
 class AuthenticationViewModel: ObservableObject {
     
     @Published var userSession: FirebaseAuth.User?
+    @Published var currentUser: User?
     
     static let shared = AuthenticationViewModel()
     
@@ -73,8 +74,7 @@ class AuthenticationViewModel: ObservableObject {
         guard let uid = userSession?.uid else { return }
         COLLECTION_USERS.document(uid).getDocument { snapshot, _ in
             guard let user = try? snapshot?.data(as: User.self) else { return }
-            
-            print("DEBUG: \(user)")
+            self.currentUser = user
         }
     }
 }
