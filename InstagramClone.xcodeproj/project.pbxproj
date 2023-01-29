@@ -62,6 +62,7 @@
 		EEDCA3572986E32400043FF1 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3562986E32400043FF1 /* Notification.swift */; };
 		EEDCA3592986E4DB00043FF1 /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3582986E4DB00043FF1 /* NotificationsViewModel.swift */; };
 		EEDCA35B2986FB2C00043FF1 /* NotificationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA35A2986FB2C00043FF1 /* NotificationCellViewModel.swift */; };
+		EEDCA35D2987142800043FF1 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA35C2987142800043FF1 /* LazyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +116,7 @@
 		EEDCA3562986E32400043FF1 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notification.swift; path = InstagramClone/View/Authentication/Notification.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA3582986E4DB00043FF1 /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationsViewModel.swift; path = InstagramClone/View/Authentication/NotificationsViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA35A2986FB2C00043FF1 /* NotificationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationCellViewModel.swift; path = InstagramClone/View/Authentication/NotificationCellViewModel.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA35C2987142800043FF1 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LazyView.swift; path = InstagramClone/View/Authentication/LazyView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 				EEDCA3132985A29F00043FF1 /* CustomSecureField.swift */,
 				EEDCA3292986124E00043FF1 /* Constants.swift */,
 				EEDCA34229863E4C00043FF1 /* TextArea.swift */,
+				EEDCA35C2987142800043FF1 /* LazyView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 			files = (
 				EEDCA3472986C0B900043FF1 /* FeedViewModel.swift in Sources */,
 				EE53C32728FF6284005ACEF3 /* SearchView.swift in Sources */,
+				EEDCA35D2987142800043FF1 /* LazyView.swift in Sources */,
 				EE53C32528FF625E005ACEF3 /* FeedView.swift in Sources */,
 				EE004DF8297C495E002A43F3 /* PostGridView.swift in Sources */,
 				EEDCA30E2985A08B00043FF1 /* RegistrationView.swift in Sources */,
