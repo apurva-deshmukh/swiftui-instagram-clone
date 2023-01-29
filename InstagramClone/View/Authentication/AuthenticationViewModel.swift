@@ -17,6 +17,7 @@ class AuthenticationViewModel: ObservableObject {
     
     init() {
         userSession = Auth.auth().currentUser
+        fetchUser()
     }
     
     func login(email: String, password: String) {
@@ -50,7 +51,7 @@ class AuthenticationViewModel: ObservableObject {
                     "uid": user.uid
                 ]
                 
-                Firestore.firestore().collection("users").document(user.uid).setData(data) { _ in
+                COLLECTION_USERS.document(user.uid).setData(data) { _ in
                     print("DEBUG: uploaded user data")
                     self?.userSession = user
                 }
@@ -69,6 +70,9 @@ class AuthenticationViewModel: ObservableObject {
     }
     
     func fetchUser() {
-        print("DEBUG: fetch user")
+        guard let uid = userSession?.uid else { return }
+        COLLECTION_USERS.document(uid).getDocument { snapshot, _ in
+            print(snapshot?.data())
+        }
     }
 }

@@ -42,6 +42,7 @@
 		EEDCA3242985B17400043FF1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEDCA3232985B17400043FF1 /* GoogleService-Info.plist */; };
 		EEDCA3262985B40200043FF1 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3252985B40200043FF1 /* AuthenticationViewModel.swift */; };
 		EEDCA3282985FFFE00043FF1 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3272985FFFE00043FF1 /* ImageUploader.swift */; };
+		EEDCA32A2986124E00043FF1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3292986124E00043FF1 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		EEDCA3232985B17400043FF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EEDCA3252985B40200043FF1 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthenticationViewModel.swift; path = InstagramClone/View/Authentication/AuthenticationViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA3272985FFFE00043FF1 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageUploader.swift; path = InstagramClone/View/Authentication/ImageUploader.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA3292986124E00043FF1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = InstagramClone/View/Authentication/Constants.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				EE004E07297E10A6002A43F3 /* ImagePicker.swift */,
 				EEDCA3112985A29500043FF1 /* CustomTextField.swift */,
 				EEDCA3132985A29F00043FF1 /* CustomSecureField.swift */,
+				EEDCA3292986124E00043FF1 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				EE004E00297E03AC002A43F3 /* NotificationCell.swift in Sources */,
 				EEDCA30C2985A07E00043FF1 /* LoginView.swift in Sources */,
 				EE004DFE297C50DC002A43F3 /* Extensions.swift in Sources */,
+				EEDCA32A2986124E00043FF1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
