@@ -11,9 +11,11 @@ struct EditProfileView: View {
     @ObservedObject private var viewModel: EditProfileViewModel
     @State private var bioText = ""
     @Environment(\.presentationMode) var mode
+    @Binding var user: User
     
-    init(viewModel: EditProfileViewModel) {
-        self.viewModel = viewModel
+    init(user: Binding<User>) {
+        self._user = user
+        self.viewModel = EditProfileViewModel(user: self._user.wrappedValue)
     }
     
     var body: some View {
@@ -44,6 +46,7 @@ struct EditProfileView: View {
         }.onReceive(viewModel.$uploadComplete) { didComplete in
             if didComplete {
                 self.mode.wrappedValue.dismiss()
+                self.user.bio = viewModel.user.bio
             }
         }
     }
