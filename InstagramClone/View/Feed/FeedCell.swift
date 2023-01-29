@@ -14,7 +14,7 @@ struct FeedCell: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            // profile indo
+            // profile info
             HStack {
                 KFImage(URL(string: viewModel.post.ownerImageUrl))
                     .resizable()
@@ -32,7 +32,7 @@ struct FeedCell: View {
             KFImage(URL(string: viewModel.post.imageUrl))
                 .resizable()
                 .scaledToFill()
-                .frame(maxHeight: 440)
+                .frame(minWidth: UIScreen.main.bounds.width, maxHeight: 440)
                 .clipped()
             
             // action buttons
