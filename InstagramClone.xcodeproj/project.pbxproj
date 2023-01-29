@@ -50,6 +50,9 @@
 		EEDCA33F29862AAB00043FF1 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA33E29862AAB00043FF1 /* UserService.swift */; };
 		EEDCA3412986377700043FF1 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3402986377700043FF1 /* UploadPostViewModel.swift */; };
 		EEDCA34329863E4C00043FF1 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA34229863E4C00043FF1 /* TextArea.swift */; };
+		EEDCA3452986BFD200043FF1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3442986BFD200043FF1 /* Post.swift */; };
+		EEDCA3472986C0B900043FF1 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3462986C0B900043FF1 /* FeedViewModel.swift */; };
+		EEDCA3492986C59900043FF1 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3482986C59900043FF1 /* PostGridViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +94,9 @@
 		EEDCA33E29862AAB00043FF1 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = InstagramClone/View/Authentication/UserService.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA3402986377700043FF1 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UploadPostViewModel.swift; path = InstagramClone/View/Authentication/UploadPostViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA34229863E4C00043FF1 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextArea.swift; path = InstagramClone/View/Authentication/TextArea.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA3442986BFD200043FF1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Post.swift; path = InstagramClone/View/Authentication/Post.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA3462986C0B900043FF1 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedViewModel.swift; path = InstagramClone/View/Authentication/FeedViewModel.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA3482986C59900043FF1 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostGridViewModel.swift; path = InstagramClone/View/Authentication/PostGridViewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				EEDCA32B2986143D00043FF1 /* User.swift */,
+				EEDCA3442986BFD200043FF1 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -185,6 +192,7 @@
 				EE53C31E28FF5F1F005ACEF3 /* Feed */,
 				EEDCA33A2986188F00043FF1 /* SearchViewModel.swift */,
 				EEDCA3402986377700043FF1 /* UploadPostViewModel.swift */,
+				EEDCA3482986C59900043FF1 /* PostGridViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -296,6 +304,7 @@
 		EE53C31E28FF5F1F005ACEF3 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				EEDCA3462986C0B900043FF1 /* FeedViewModel.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -407,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEDCA3472986C0B900043FF1 /* FeedViewModel.swift in Sources */,
 				EE53C32728FF6284005ACEF3 /* SearchView.swift in Sources */,
 				EE53C32528FF625E005ACEF3 /* FeedView.swift in Sources */,
 				EE004DF8297C495E002A43F3 /* PostGridView.swift in Sources */,
@@ -416,6 +426,7 @@
 				EE53C30028FF5D77005ACEF3 /* InstagramCloneApp.swift in Sources */,
 				EE53C31528FF5E8F005ACEF3 /* ContentView.swift in Sources */,
 				EE53C32328FF622C005ACEF3 /* MainTabView.swift in Sources */,
+				EEDCA3492986C59900043FF1 /* PostGridViewModel.swift in Sources */,
 				EEDCA3102985A0A000043FF1 /* ResetPasswordView.swift in Sources */,
 				EE53C32D28FF62E2005ACEF3 /* UploadPostView.swift in Sources */,
 				EEDCA3412986377700043FF1 /* UploadPostViewModel.swift in Sources */,
@@ -428,6 +439,7 @@
 				EE004E04297E0A15002A43F3 /* UserStatView.swift in Sources */,
 				EE004DFA297C4C1E002A43F3 /* UserCell.swift in Sources */,
 				EE004DF6297C4781002A43F3 /* SearchBar.swift in Sources */,
+				EEDCA3452986BFD200043FF1 /* Post.swift in Sources */,
 				EEDCA33B2986188F00043FF1 /* SearchViewModel.swift in Sources */,
 				EEDCA3142985A29F00043FF1 /* CustomSecureField.swift in Sources */,
 				EE53C32928FF628E005ACEF3 /* NotificationsView.swift in Sources */,

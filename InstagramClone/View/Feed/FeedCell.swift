@@ -6,26 +6,29 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct FeedCell: View {
+    let post: Post
+    
     var body: some View {
         VStack(alignment: .leading) {
             // profile indo
             HStack {
-                Image("post2")
+                KFImage(URL(string: post.ownerImageUrl))
                     .resizable()
                     .scaledToFill()
                     .frame(width: 36, height: 36)
                     .clipped()
                     .cornerRadius(18)
-                Text("joker")
+                Text(post.ownerUsername)
                     .font(.system(size: 14, weight: .semibold))
             }
             .padding([.leading, .bottom], 8)
             
             // post image
             
-            Image("post1")
+            KFImage(URL(string: post.imageUrl))
                 .resizable()
                 .scaledToFill()
                 .frame(maxHeight: 440)
@@ -72,7 +75,7 @@ struct FeedCell: View {
             
             // likes
             
-            Text("3 likes")
+            Text("\(post.likes) likes")
                 .font(.system(size: 14, weight: .semibold))
                 .padding(.leading, 8)
                 .padding(.bottom, 2)
@@ -80,9 +83,9 @@ struct FeedCell: View {
             // caption
             
             HStack {
-                Text("batman")
+                Text(post.ownerUsername)
                     .font(.system(size: 14, weight: .semibold)) +
-                Text(" All men have limits. They learn what they are and learn not to exceed them. I ignore mine.")
+                Text(" \(post.caption)")
                     .font(.system(size: 15))
             }
             .padding(.horizontal, 8)
@@ -92,12 +95,6 @@ struct FeedCell: View {
                 .foregroundColor(.gray)
                 .padding(.leading, 8)
                 .padding(.top, -2)
-        }.padding()
-    }
-}
-
-struct FeedCell_Previews: PreviewProvider {
-    static var previews: some View {
-        FeedCell()
+        }
     }
 }
