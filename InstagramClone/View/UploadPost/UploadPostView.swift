@@ -47,21 +47,34 @@ struct UploadPostView: View {
                 }
                 .padding()
                 
-                Button {
-                    viewModel.uploadPost(caption: captionText, image: selectedImage) { _ in
+                HStack(spacing: 16) {
+                    Button {
                         captionText = ""
                         postImage = nil
-                        tabIndex = 0
+                    } label: {
+                        Text("Cancel")
+                            .font(.system(size: 16, weight: .semibold))
+                            .frame(width: 172, height: 50)
+                            .background(Color.red)
+                            .cornerRadius(5)
+                            .foregroundColor(.white)
                     }
-                } label: {
-                    Text("Share")
-                        .font(.system(size: 16, weight: .semibold))
-                        .frame(width: 360, height: 50)
-                        .background(Color.blue)
-                        .cornerRadius(5)
-                        .foregroundColor(.white)
-                }
-                .padding()
+                    
+                    Button {
+                        viewModel.uploadPost(caption: captionText, image: selectedImage) { _ in
+                            captionText = ""
+                            postImage = nil
+                            tabIndex = 0
+                        }
+                    } label: {
+                        Text("Share")
+                            .font(.system(size: 16, weight: .semibold))
+                            .frame(width: 172, height: 50)
+                            .background(Color.blue)
+                            .cornerRadius(5)
+                            .foregroundColor(.white)
+                    }
+                }.padding()
 
             }
             Spacer()
