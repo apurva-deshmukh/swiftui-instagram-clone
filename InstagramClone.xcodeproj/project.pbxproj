@@ -53,6 +53,7 @@
 		EEDCA3452986BFD200043FF1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3442986BFD200043FF1 /* Post.swift */; };
 		EEDCA3472986C0B900043FF1 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3462986C0B900043FF1 /* FeedViewModel.swift */; };
 		EEDCA3492986C59900043FF1 /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3482986C59900043FF1 /* PostGridViewModel.swift */; };
+		EEDCA34B2986CA4100043FF1 /* FeedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA34A2986CA4100043FF1 /* FeedCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		EEDCA3442986BFD200043FF1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Post.swift; path = InstagramClone/View/Authentication/Post.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA3462986C0B900043FF1 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedViewModel.swift; path = InstagramClone/View/Authentication/FeedViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA3482986C59900043FF1 /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostGridViewModel.swift; path = InstagramClone/View/Authentication/PostGridViewModel.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA34A2986CA4100043FF1 /* FeedCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedCellViewModel.swift; path = InstagramClone/View/Authentication/FeedCellViewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				EEDCA3462986C0B900043FF1 /* FeedViewModel.swift */,
+				EEDCA34A2986CA4100043FF1 /* FeedCellViewModel.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 				EE004E04297E0A15002A43F3 /* UserStatView.swift in Sources */,
 				EE004DFA297C4C1E002A43F3 /* UserCell.swift in Sources */,
 				EE004DF6297C4781002A43F3 /* SearchBar.swift in Sources */,
+				EEDCA34B2986CA4100043FF1 /* FeedCellViewModel.swift in Sources */,
 				EEDCA3452986BFD200043FF1 /* Post.swift in Sources */,
 				EEDCA33B2986188F00043FF1 /* SearchViewModel.swift in Sources */,
 				EEDCA3142985A29F00043FF1 /* CustomSecureField.swift in Sources */,
