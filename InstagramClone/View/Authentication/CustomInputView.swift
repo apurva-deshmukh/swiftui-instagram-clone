@@ -14,10 +14,8 @@ struct CustomInputView: View {
     
     var body: some View {
         VStack {
-            // divider
             Divider()
             
-            // hstack with send button and text field
             HStack {
                 TextField("Comment...", text: $inputText)
                     .textFieldStyle(PlainTextFieldStyle())

@@ -9,10 +9,10 @@ import SwiftUI
 
 struct CommentsView: View {
     @State var commentText = ""
+    @ObservedObject var viewModel: CommentsViewModel
     
     var body: some View {
         VStack {
-            // comment list
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: 24) {
                     ForEach(0 ..< 10) { _ in
@@ -26,12 +26,7 @@ struct CommentsView: View {
     }
     
     func uploadComment() {
-        print("DEBUG: upload comment")
-    }
-}
-
-struct CommentsView_Previews: PreviewProvider {
-    static var previews: some View {
-        CommentsView()
+        viewModel.uploadComment(commentText: commentText)
+        commentText = ""
     }
 }
