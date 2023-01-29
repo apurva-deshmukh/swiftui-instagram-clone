@@ -9,13 +9,14 @@ import SwiftUI
 
 struct EditProfileView: View {
     @ObservedObject private var viewModel: EditProfileViewModel
-    @State private var bioText = ""
+    @State private var bioText: String
     @Environment(\.presentationMode) var mode
     @Binding var user: User
     
     init(user: Binding<User>) {
         self._user = user
         self.viewModel = EditProfileViewModel(user: self._user.wrappedValue)
+        self._bioText = State(initialValue: _user.wrappedValue.bio ?? "")
     }
     
     var body: some View {
