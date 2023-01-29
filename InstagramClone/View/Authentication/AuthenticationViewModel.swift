@@ -13,6 +13,7 @@ class AuthenticationViewModel: ObservableObject {
     
     @Published var userSession: FirebaseAuth.User?
     @Published var currentUser: User?
+    @Published var didSendResetPasswordLink: Bool = false
     
     static let shared = AuthenticationViewModel()
     
@@ -68,8 +69,14 @@ class AuthenticationViewModel: ObservableObject {
         try? Auth.auth().signOut()
     }
     
-    func resetPassword() {
-        print("DEBUG: reset password")
+    func resetPassword(email: String) {
+        Auth.auth().sendPasswordReset(withEmail: email) { error in
+            if let error {
+                print("Failed to send link with error \(error.localizedDescription)")
+                return
+            }
+            self.didSendResetPasswordLink = true
+        }
     }
     
     func fetchUser() {
