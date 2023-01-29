@@ -60,6 +60,7 @@
 		EEDCA3532986D3FD00043FF1 /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3522986D3FD00043FF1 /* CommentsViewModel.swift */; };
 		EEDCA3552986D70100043FF1 /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3542986D70100043FF1 /* CustomInputView.swift */; };
 		EEDCA3572986E32400043FF1 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3562986E32400043FF1 /* Notification.swift */; };
+		EEDCA3592986E4DB00043FF1 /* NotificationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3582986E4DB00043FF1 /* NotificationsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -111,6 +112,7 @@
 		EEDCA3522986D3FD00043FF1 /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommentsViewModel.swift; path = InstagramClone/View/Authentication/CommentsViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA3542986D70100043FF1 /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomInputView.swift; path = InstagramClone/View/Authentication/CustomInputView.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA3562986E32400043FF1 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notification.swift; path = InstagramClone/View/Authentication/Notification.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA3582986E4DB00043FF1 /* NotificationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationsViewModel.swift; path = InstagramClone/View/Authentication/NotificationsViewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -333,6 +335,7 @@
 		EE53C31F28FF5F26005ACEF3 /* Notification */ = {
 			isa = PBXGroup;
 			children = (
+				EEDCA3582986E4DB00043FF1 /* NotificationsViewModel.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				EE53C32528FF625E005ACEF3 /* FeedView.swift in Sources */,
 				EE004DF8297C495E002A43F3 /* PostGridView.swift in Sources */,
 				EEDCA30E2985A08B00043FF1 /* RegistrationView.swift in Sources */,
+				EEDCA3592986E4DB00043FF1 /* NotificationsViewModel.swift in Sources */,
 				EEDCA3532986D3FD00043FF1 /* CommentsViewModel.swift in Sources */,
 				EEDCA3122985A29500043FF1 /* CustomTextField.swift in Sources */,
 				EEDCA3282985FFFE00043FF1 /* ImageUploader.swift in Sources */,
