@@ -49,6 +49,7 @@
 		EEDCA33D2986279400043FF1 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA33C2986279300043FF1 /* ProfileViewModel.swift */; };
 		EEDCA33F29862AAB00043FF1 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA33E29862AAB00043FF1 /* UserService.swift */; };
 		EEDCA3412986377700043FF1 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3402986377700043FF1 /* UploadPostViewModel.swift */; };
+		EEDCA34329863E4C00043FF1 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA34229863E4C00043FF1 /* TextArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		EEDCA33C2986279300043FF1 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewModel.swift; path = InstagramClone/View/Authentication/ProfileViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA33E29862AAB00043FF1 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = InstagramClone/View/Authentication/UserService.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA3402986377700043FF1 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UploadPostViewModel.swift; path = InstagramClone/View/Authentication/UploadPostViewModel.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA34229863E4C00043FF1 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TextArea.swift; path = InstagramClone/View/Authentication/TextArea.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				EEDCA3112985A29500043FF1 /* CustomTextField.swift */,
 				EEDCA3132985A29F00043FF1 /* CustomSecureField.swift */,
 				EEDCA3292986124E00043FF1 /* Constants.swift */,
+				EEDCA34229863E4C00043FF1 /* TextArea.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 				EE53C32D28FF62E2005ACEF3 /* UploadPostView.swift in Sources */,
 				EEDCA3412986377700043FF1 /* UploadPostViewModel.swift in Sources */,
 				EE004E08297E10A6002A43F3 /* ImagePicker.swift in Sources */,
+				EEDCA34329863E4C00043FF1 /* TextArea.swift in Sources */,
 				EEDCA3262985B40200043FF1 /* AuthenticationViewModel.swift in Sources */,
 				EEDCA33F29862AAB00043FF1 /* UserService.swift in Sources */,
 				EE004E02297E0603002A43F3 /* ProfileHeaderView.swift in Sources */,
