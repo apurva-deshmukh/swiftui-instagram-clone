@@ -30,6 +30,7 @@ class AuthenticationViewModel: ObservableObject {
             
             guard let user = result?.user else { return }
             self.userSession = user
+            self.fetchUser()
         }
     }
     
@@ -55,6 +56,7 @@ class AuthenticationViewModel: ObservableObject {
                 COLLECTION_USERS.document(user.uid).setData(data) { _ in
                     print("DEBUG: uploaded user data")
                     self?.userSession = user
+                    self?.fetchUser()
                 }
             }
         }
