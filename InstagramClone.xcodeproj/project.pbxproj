@@ -59,6 +59,7 @@
 		EEDCA3512986D3EB00043FF1 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3502986D3EB00043FF1 /* CommentCell.swift */; };
 		EEDCA3532986D3FD00043FF1 /* CommentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3522986D3FD00043FF1 /* CommentsViewModel.swift */; };
 		EEDCA3552986D70100043FF1 /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3542986D70100043FF1 /* CustomInputView.swift */; };
+		EEDCA3572986E32400043FF1 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3562986E32400043FF1 /* Notification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,6 +110,7 @@
 		EEDCA3502986D3EB00043FF1 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommentCell.swift; path = InstagramClone/View/Authentication/CommentCell.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA3522986D3FD00043FF1 /* CommentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommentsViewModel.swift; path = InstagramClone/View/Authentication/CommentsViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA3542986D70100043FF1 /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomInputView.swift; path = InstagramClone/View/Authentication/CustomInputView.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA3562986E32400043FF1 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notification.swift; path = InstagramClone/View/Authentication/Notification.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				EEDCA32B2986143D00043FF1 /* User.swift */,
 				EEDCA3442986BFD200043FF1 /* Post.swift */,
 				EEDCA34C2986D3D100043FF1 /* Comment.swift */,
+				EEDCA3562986E32400043FF1 /* Notification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				EE004DFC297C4C2B002A43F3 /* UserListView.swift in Sources */,
 				EE004E00297E03AC002A43F3 /* NotificationCell.swift in Sources */,
 				EEDCA30C2985A07E00043FF1 /* LoginView.swift in Sources */,
+				EEDCA3572986E32400043FF1 /* Notification.swift in Sources */,
 				EEDCA34D2986D3D100043FF1 /* Comment.swift in Sources */,
 				EE004DFE297C50DC002A43F3 /* Extensions.swift in Sources */,
 				EEDCA32A2986124E00043FF1 /* Constants.swift in Sources */,
