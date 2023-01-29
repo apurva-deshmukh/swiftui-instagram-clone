@@ -48,6 +48,7 @@
 		EEDCA33B2986188F00043FF1 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA33A2986188F00043FF1 /* SearchViewModel.swift */; };
 		EEDCA33D2986279400043FF1 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA33C2986279300043FF1 /* ProfileViewModel.swift */; };
 		EEDCA33F29862AAB00043FF1 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA33E29862AAB00043FF1 /* UserService.swift */; };
+		EEDCA3412986377700043FF1 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA3402986377700043FF1 /* UploadPostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		EEDCA33A2986188F00043FF1 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewModel.swift; path = InstagramClone/View/Authentication/SearchViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA33C2986279300043FF1 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewModel.swift; path = InstagramClone/View/Authentication/ProfileViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA33E29862AAB00043FF1 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = InstagramClone/View/Authentication/UserService.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA3402986377700043FF1 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UploadPostViewModel.swift; path = InstagramClone/View/Authentication/UploadPostViewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				EE53C31F28FF5F26005ACEF3 /* Notification */,
 				EE53C31E28FF5F1F005ACEF3 /* Feed */,
 				EEDCA33A2986188F00043FF1 /* SearchViewModel.swift */,
+				EEDCA3402986377700043FF1 /* UploadPostViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				EE53C32328FF622C005ACEF3 /* MainTabView.swift in Sources */,
 				EEDCA3102985A0A000043FF1 /* ResetPasswordView.swift in Sources */,
 				EE53C32D28FF62E2005ACEF3 /* UploadPostView.swift in Sources */,
+				EEDCA3412986377700043FF1 /* UploadPostViewModel.swift in Sources */,
 				EE004E08297E10A6002A43F3 /* ImagePicker.swift in Sources */,
 				EEDCA3262985B40200043FF1 /* AuthenticationViewModel.swift in Sources */,
 				EEDCA33F29862AAB00043FF1 /* UserService.swift in Sources */,
