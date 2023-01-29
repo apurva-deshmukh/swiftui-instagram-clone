@@ -15,6 +15,8 @@ struct UploadPostView: View {
     
     @ObservedObject var viewModel = UploadPostViewModel()
     
+    @Binding var tabIndex: Int
+    
     var body: some View {
         VStack {
             if postImage == nil {
@@ -32,9 +34,9 @@ struct UploadPostView: View {
                 .sheet(isPresented: $imagePickerPresented, onDismiss: loadImage) {
                     ImagePicker(image: $selectedImage)
                 }
-            } else if let postImage {
+            } else if let image = postImage {
                 HStack(alignment: .top) {
-                    postImage
+                    image
                         .resizable()
                         .scaledToFill()
                         .frame(width: 96, height: 96)
@@ -45,7 +47,11 @@ struct UploadPostView: View {
                 .padding()
                 
                 Button {
-                    viewModel.uploadPost(caption: captionText, image: selectedImage)
+                    viewModel.uploadPost(caption: captionText, image: selectedImage) { _ in
+                        captionText = ""
+                        postImage = nil
+                        tabIndex = 0
+                    }
                 } label: {
                     Text("Share")
                         .font(.system(size: 16, weight: .semibold))
@@ -67,11 +73,5 @@ extension UploadPostView {
     func loadImage() {
         guard let selectedImage else { return }
         postImage = Image(uiImage: selectedImage)
-    }
-}
-
-struct UploadPostView_Previews: PreviewProvider {
-    static var previews: some View {
-        UploadPostView()
     }
 }

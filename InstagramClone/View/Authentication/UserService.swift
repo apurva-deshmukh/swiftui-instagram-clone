@@ -5,12 +5,13 @@
 //  Created by Apurva Deshmukh on 1/28/23.
 //
 
-import Foundation
 import Firebase
+
+typealias FirestoreCompletion = ((Error?) -> Void)?
 
 struct UserService {
     
-    static func follow(uid: String, completion: ((Error?) -> Void)?) {
+    static func follow(uid: String, completion: FirestoreCompletion) {
         guard let currentUid = AuthenticationViewModel.shared.userSession?.uid else { return }
         
         COLLECTION_FOLLOWING.document(currentUid)
@@ -20,7 +21,7 @@ struct UserService {
             }
     }
     
-    static func unfollow(uid: String, completion: ((Error?) -> Void)?) {
+    static func unfollow(uid: String, completion: FirestoreCompletion) {
         guard let currentUid = AuthenticationViewModel.shared.userSession?.uid else { return }
         
         COLLECTION_FOLLOWING.document(currentUid)

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var viewModel: AuthenticationViewModel
+    @State var selectedIndex = 0
     
     var body: some View {
         Group {
@@ -16,7 +17,7 @@ struct ContentView: View {
                 LoginView().environmentObject(viewModel)
             } else {
                 if let user = viewModel.currentUser {
-                    MainTabView(user: user)
+                    MainTabView(user: user, selectedIndex: $selectedIndex)
                 }
             }
         }
