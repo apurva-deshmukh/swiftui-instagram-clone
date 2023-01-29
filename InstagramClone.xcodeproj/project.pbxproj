@@ -46,6 +46,7 @@
 		EEDCA337298615EA00043FF1 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = EEDCA336298615EA00043FF1 /* FirebaseMessaging */; };
 		EEDCA339298615EA00043FF1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EEDCA338298615EA00043FF1 /* FirebaseStorage */; };
 		EEDCA33B2986188F00043FF1 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA33A2986188F00043FF1 /* SearchViewModel.swift */; };
+		EEDCA33D2986279400043FF1 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA33C2986279300043FF1 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,7 @@
 		EEDCA3292986124E00043FF1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = InstagramClone/View/Authentication/Constants.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA32B2986143D00043FF1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = InstagramClone/View/Authentication/User.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA33A2986188F00043FF1 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewModel.swift; path = InstagramClone/View/Authentication/SearchViewModel.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA33C2986279300043FF1 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewModel.swift; path = InstagramClone/View/Authentication/ProfileViewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +309,7 @@
 		EE53C32128FF5F46005ACEF3 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				EEDCA33C2986279300043FF1 /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				EEDCA32C2986143D00043FF1 /* User.swift in Sources */,
 				EE1FC956297ADF3A001C8C5F /* FeedCell.swift in Sources */,
 				EE004E06297E0B35002A43F3 /* ProfileActionButtonView.swift in Sources */,
+				EEDCA33D2986279400043FF1 /* ProfileViewModel.swift in Sources */,
 				EE004DFC297C4C2B002A43F3 /* UserListView.swift in Sources */,
 				EE004E00297E03AC002A43F3 /* NotificationCell.swift in Sources */,
 				EEDCA30C2985A07E00043FF1 /* LoginView.swift in Sources */,
