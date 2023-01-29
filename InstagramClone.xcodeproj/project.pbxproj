@@ -47,6 +47,7 @@
 		EEDCA339298615EA00043FF1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EEDCA338298615EA00043FF1 /* FirebaseStorage */; };
 		EEDCA33B2986188F00043FF1 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA33A2986188F00043FF1 /* SearchViewModel.swift */; };
 		EEDCA33D2986279400043FF1 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA33C2986279300043FF1 /* ProfileViewModel.swift */; };
+		EEDCA33F29862AAB00043FF1 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA33E29862AAB00043FF1 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		EEDCA32B2986143D00043FF1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = InstagramClone/View/Authentication/User.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA33A2986188F00043FF1 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchViewModel.swift; path = InstagramClone/View/Authentication/SearchViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA33C2986279300043FF1 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewModel.swift; path = InstagramClone/View/Authentication/ProfileViewModel.swift; sourceTree = SOURCE_ROOT; };
+		EEDCA33E29862AAB00043FF1 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = InstagramClone/View/Authentication/UserService.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				EEDCA3272985FFFE00043FF1 /* ImageUploader.swift */,
+				EEDCA33E29862AAB00043FF1 /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				EE53C32D28FF62E2005ACEF3 /* UploadPostView.swift in Sources */,
 				EE004E08297E10A6002A43F3 /* ImagePicker.swift in Sources */,
 				EEDCA3262985B40200043FF1 /* AuthenticationViewModel.swift in Sources */,
+				EEDCA33F29862AAB00043FF1 /* UserService.swift in Sources */,
 				EE004E02297E0603002A43F3 /* ProfileHeaderView.swift in Sources */,
 				EE53C32B28FF62BF005ACEF3 /* ProfileView.swift in Sources */,
 				EE004E04297E0A15002A43F3 /* UserStatView.swift in Sources */,

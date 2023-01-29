@@ -15,7 +15,10 @@ class ProfileViewModel: ObservableObject {
     }
     
     func follow() {
-        print("DEBUG: follow")
+        guard let uid = user.id else { return }
+        UserService.follow(uid: uid) { _ in
+            print("Successfully followed \(self.user.username)")
+        }
     }
     
     func unfollow() {
