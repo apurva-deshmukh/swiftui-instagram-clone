@@ -33,4 +33,6 @@ struct Notification: Identifiable, Decodable {
     let timestamp: Timestamp
     let type: NotificationType
     let uid: String
+    
+    var isFollowed: Bool? = false
 }
