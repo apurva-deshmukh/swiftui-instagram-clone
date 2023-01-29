@@ -27,7 +27,7 @@ struct ProfileActionButtonView: View {
                     )
             }
             .sheet(isPresented: $showEditProfile) {
-                EditProfileView()
+                EditProfileView(viewModel: EditProfileViewModel(user: viewModel.user))
             }
         } else {
             // follow and message button

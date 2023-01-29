@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct EditProfileView: View {
+    @ObservedObject private var viewModel: EditProfileViewModel
     @State private var bioText = ""
+    @Environment(\.presentationMode) var mode
+    
+    init(viewModel: EditProfileViewModel) {
+        self.viewModel = viewModel
+    }
+    
     var body: some View {
         VStack {
             HStack {
                 Button {
-                    
+                    mode.wrappedValue.dismiss()
                 } label: {
                     Text("Cancel")
                 }
@@ -21,7 +28,7 @@ struct EditProfileView: View {
                 Spacer()
                 
                 Button {
-                    
+                    viewModel.saveUserData(bio: bioText)
                 } label: {
                     Text("Done")
                         .bold()
@@ -34,12 +41,10 @@ struct EditProfileView: View {
             
             
             Spacer()
+        }.onReceive(viewModel.$uploadComplete) { didComplete in
+            if didComplete {
+                self.mode.wrappedValue.dismiss()
+            }
         }
-    }
-}
-
-struct EditProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        EditProfileView()
     }
 }

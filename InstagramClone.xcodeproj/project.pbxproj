@@ -64,6 +64,7 @@
 		EEDCA35B2986FB2C00043FF1 /* NotificationCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA35A2986FB2C00043FF1 /* NotificationCellViewModel.swift */; };
 		EEDCA35D2987142800043FF1 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA35C2987142800043FF1 /* LazyView.swift */; };
 		EEDCA35F29871B3500043FF1 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA35E29871B3500043FF1 /* EditProfileView.swift */; };
+		EEDCA36129871DD100043FF1 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDCA36029871DD100043FF1 /* EditProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +120,7 @@
 		EEDCA35A2986FB2C00043FF1 /* NotificationCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationCellViewModel.swift; path = InstagramClone/View/Authentication/NotificationCellViewModel.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA35C2987142800043FF1 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LazyView.swift; path = InstagramClone/View/Authentication/LazyView.swift; sourceTree = SOURCE_ROOT; };
 		EEDCA35E29871B3500043FF1 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		EEDCA36029871DD100043FF1 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditProfileViewModel.swift; path = InstagramClone/View/Profile/EditProfileViewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,6 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				EEDCA33C2986279300043FF1 /* ProfileViewModel.swift */,
+				EEDCA36029871DD100043FF1 /* EditProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				EEDCA3262985B40200043FF1 /* AuthenticationViewModel.swift in Sources */,
 				EEDCA33F29862AAB00043FF1 /* UserService.swift in Sources */,
 				EEDCA3552986D70100043FF1 /* CustomInputView.swift in Sources */,
+				EEDCA36129871DD100043FF1 /* EditProfileViewModel.swift in Sources */,
 				EE004E02297E0603002A43F3 /* ProfileHeaderView.swift in Sources */,
 				EE53C32B28FF62BF005ACEF3 /* ProfileView.swift in Sources */,
 				EE004E04297E0A15002A43F3 /* UserStatView.swift in Sources */,
